@@ -1,7 +1,15 @@
+import React from 'react';
+import TodoList from './TodoList'
+import Form from './Form';
+
 function App() {
+  const [todos, setTodos] = useState(['Todo 1', 'Todo 2'])
   return (
-    null
-  );
+    <>
+    <TodoList todos={todos}/>
+    <Form />
+    </>
+  )
 }
 
 export default App;
