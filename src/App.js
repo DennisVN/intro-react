@@ -12,6 +12,7 @@ function App() {
     const name = todoNameRef.current.value;
     if (name === '') return
     console.log(name)
+    todoNameRef.current.value = null; 
   }
 
   return (
