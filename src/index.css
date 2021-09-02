@@ -1,15 +1,31 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
 body 
 {   
     font-family: 'Montserrat', sans-serif;
-    background-color: pink;
     text-align: center;
     justify-self: center;
     text-align: center;
     font-size: 2rem;
+    background: linear-gradient(
+        90deg,
+        rgba(255, 111, 219, 0.522) 0%,
+        rgba(250, 155, 226, 0.946) 100%
+    );
+}
+
+.inputbox 
+{
+    display: inline-flex;
 }
 
 input 
 {
+    display: flex;
     height: 4rem;
     width: 20rem;
     text-align: center;
@@ -25,20 +41,30 @@ button
 
 #add
 {
-    background-color:rgb(96, 214, 96);
+    background-color:rgba(152, 251, 225, 0.576);
     font-size: 1.2rem;
 }
 
 #clear
 {
-    background-color: rgba(243, 22, 22, 0.885);
+    background-color: rgba(240, 52, 52, 0.364);
     font-size: 1.2rem;
 }
 
 #formItem label
-{
-    display: block;
-    text-align: center;
+{   
     line-height: 150%;
     font-size: .85rem;
+    padding:  2rem ;
+    border: 2px solid black;
+    height: 500px;
+    width: 600px;
+    background: transparent;
+    color: rgba(0, 0, 0, 0.378);
 }
+
+.counter 
+{
+    color: rgb(107, 91, 255);
+}
+

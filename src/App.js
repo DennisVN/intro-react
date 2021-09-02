@@ -44,15 +44,20 @@ function App() {
 
   return (
     <>
-    <TodoList todos={todos} toggleTodo={toggleTodo}/> 
-    <div>
-        <input ref={todoNameRef} type="text" placeholder="Write a new todo" /><br></br>
+
+      <div>
+        <input class="inputbox" ref={todoNameRef} type="text"  placeholder="Write a new todo" /><br></br>
         <button onClick={handleAddTodo} id="add">Add todo</button>
         <button onClick={handleClearTodos} id="clear">Clear completed</button>
-        <div>{todos.filter(todo => !todo.complete).length} LEFT TO DO </div>
+        <div class="counter">{todos.filter(todo => !todo.complete).length} LEFT TO DO </div>
       </div>
+      <div class="todoListItems">
+        <TodoList todos={todos} toggleTodo={toggleTodo}/>
+      </div> 
     </>
   )
 }
 
 export default App;
+
+// TODO : CHECK REACTROUTERDOM, 
