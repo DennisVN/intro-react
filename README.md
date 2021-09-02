@@ -1,6 +1,6 @@
 ### DEPLOYED ON NETFLIFY : 
 
-Deployed here : [Netlify Page](https://gifted-heyrovsky-58a17d.netlify.app/).
+Deployed here : [Netlify Page](https://infallible-bassi-6f6447.netlify.app/).
 
 ### WIP : 
 
