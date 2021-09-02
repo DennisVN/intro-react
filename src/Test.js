@@ -22,7 +22,7 @@ const Test = () => {
                 if(todo.complete){
                     console.log(todo.name);
                  return (<div key={todo.id} value={todo.name}>{todo.name}</div>)
-                }
+                } return (null)
         })}
         
         </div>
