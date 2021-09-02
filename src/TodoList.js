@@ -12,6 +12,7 @@ export default function TodoList({ todos, toggleTodo }) {
         todos.map( item => {
             if (item.complete) {
                 localStorage.setItem(LOCAL_STORAGE_KEY, JSON.stringify(item))
+                console.log(item.complete);
             }
         }) 
     }, [todos])
