@@ -54,7 +54,6 @@ const Home = () => {
           <TodoList todos={todos} toggleTodo={toggleTodo}/>
         </div> 
         </>
-
     )
 };
 
