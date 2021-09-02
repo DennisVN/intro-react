@@ -1,4 +1,3 @@
-import React, { useState, useRef, useEffect } from 'react';
 import './index.css';
 import { BrowserRouter as Router, Route, Switch, Link } from 'react-router-dom';
 import Home from './Home';

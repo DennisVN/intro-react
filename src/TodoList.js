@@ -1,11 +1,10 @@
 import Todo from './Todo';
-import React, { useEffect, useState } from 'react';
+import React, { useEffect } from 'react';
 
 const LOCAL_STORAGE_KEY = 'todoApp.item';
 
 // render out Todos
 export default function TodoList({ todos, toggleTodo }) {
-    const [allTodos, setAllTodos] = useState([]);
 
     useEffect(() => {
         //TODO : if state is true, SAVE it in localStorage
