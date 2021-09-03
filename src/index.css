@@ -42,14 +42,17 @@ button
     font-size: .85rem;
     padding:  2rem ;
     border: 2px solid black;
-    height: 500px;
-    width: 600px;
-    background: transparent;
-    color: rgba(0, 0, 0, 0.378);
 }
 
 .counter 
 {
     color: rgb(107, 91, 255);
+}
+
+.form-check-input 
+{
+    height: 2.5rem;
+    width: 2.5rem;
+    margin-right: 5px;
 }
 
