@@ -15,8 +15,14 @@ const Test = () => {
         localStorage.setItem(LOCAL_STORAGE_KEY, JSON.stringify(todos))
     }, [todos]);
 
+    function handleClearTodos() {
+        const newTodos = todos.filter(todo => !todo.complete)
+        setTodos(newTodos);
+    }
+
     return (
         <div>
+        <button className="btn btn-outline-danger .btn-lg" onClick={handleClearTodos} id="clear">Clear done</button>
         <div className="counter">{todos.filter(todo => todo.complete).length} DONE</div>
         {todos.map(todo => {
                 if(todo.complete){

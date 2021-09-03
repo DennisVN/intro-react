@@ -47,11 +47,10 @@ const Home = () => {
             <div className="col-sm-12 d-flex justify-content-center">
                 <input className="inputbox input-group input-group-sm-3" ref={todoNameRef} type="text"  placeholder="Write a new todo" />
                 <button className="btn btn-outline-success .btn-lg" onClick={handleAddTodo} id="add">Add todo</button>
-                <button className="btn btn-outline-danger .btn-lg" onClick={handleClearTodos} id="clear">Clear done</button>
             </div>
         </div>
-            <div className="counter">{todos.filter(todo => !todo.complete).length} LEFT TO DO </div>
             <div className="todoListItems  justify-content-center">
+            <div className="counter">{todos.filter(todo => !todo.complete).length} LEFT TO DO </div>
                 <TodoList todos={todos} toggleTodo={toggleTodo}/>
             </div> 
         </>
