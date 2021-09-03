@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import './index.css';
+//import './index.css';
 
 const LOCAL_STORAGE_KEY = 'todoApp.todos';
 

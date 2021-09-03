@@ -1,9 +1,3 @@
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
-
 body 
 {   
     font-family: 'Montserrat', sans-serif;
@@ -11,17 +5,8 @@ body
     justify-self: center;
     text-align: center;
     font-size: 2rem;
-    background: linear-gradient(
-        90deg,
-        rgba(255, 111, 219, 0.522) 0%,
-        rgba(250, 155, 226, 0.946) 100%
-    );
 }
 
-.inputbox 
-{
-    display: inline-flex;
-}
 
 input 
 {
@@ -34,7 +19,7 @@ input
 
 button 
 {
-    width: 10.1rem;
+    width: 10rem;
     height: 4rem;
     border-radius: 5%;
 }

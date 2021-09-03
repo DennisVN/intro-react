@@ -43,19 +43,20 @@ const Home = () => {
 
     return (
         <>
-        <div>
-          <input className="inputbox" ref={todoNameRef} type="text"  placeholder="Write a new todo" /><br></br>
-          <button onClick={handleAddTodo} id="add">Add todo</button>
-          <button onClick={handleClearTodos} id="clear">Clear completed</button>
-          <div className="counter">{todos.filter(todo => !todo.complete).length} LEFT TO DO </div>
+        <div className="col-lg d-flex justify-content-center">
+            <div className="col-sm-12 d-flex justify-content-center">
+                <input className="inputbox input-group input-group-sm-3" ref={todoNameRef} type="text"  placeholder="Write a new todo" />
+                <button className="btn btn-outline-success .btn-lg" onClick={handleAddTodo} id="add">Add todo</button>
+                <button className="btn btn-outline-danger .btn-lg" onClick={handleClearTodos} id="clear">Clear done</button>
+            </div>
         </div>
-        <div className="todoListItems">
-          <TodoList todos={todos} toggleTodo={toggleTodo}/>
-        </div> 
+            <div className="counter">{todos.filter(todo => !todo.complete).length} LEFT TO DO </div>
+            <div className="todoListItems  justify-content-center">
+                <TodoList todos={todos} toggleTodo={toggleTodo}/>
+            </div> 
         </>
     )
 };
-
 export default  Home;
 
 
