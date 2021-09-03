@@ -36,11 +36,6 @@ const Home = () => {
         todoNameRef.current.value = null; 
     }
 
-    function handleClearTodos() {
-        const newTodos = todos.filter(todo => !todo.complete)
-        setTodos(newTodos);
-    }
-
     return (
         <>
         <div className="col-lg d-flex justify-content-center">
